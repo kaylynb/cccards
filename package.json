@@ -1,0 +1,22 @@
+{
+  "name": "cccards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaylynb/cccards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaylynb/cccards/issues"
+  },
+  "homepage": "https://github.com/kaylynb/cccards#readme",
+  "dependencies": {
+    "gm": "^1.18.1"
+  }
+}
