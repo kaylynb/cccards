@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kaylynb/cccards#readme",
   "dependencies": {
-    "gm": "^1.18.1"
+    "dot": "^1.0.3",
+    "webshot": "^0.16.0"
   }
 }
