@@ -9,7 +9,7 @@ This is being used to generate a custom printed deck of [DevOps Against Humanity
 You need `phantomjs` installed. This renders each card as a page in phantom, and saves it as a png.
 
 ## Other Shit
-The code is horrifying. PhantomJS is fun to work with because it doesn't seem to work with flexbox or any other things that browsers have had for decades.
+The code is horrifying. PhantomJS is 'fun' to work with because it doesn't seem to work with flexbox or any other things that browsers have had for decades.
 
 In the future, it'd probably make more sense to write this as pure javascript and render cards as canvas or some shit. I dunno, I'll probably never work on this again once I get a card run off.
 
