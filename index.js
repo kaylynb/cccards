@@ -54,6 +54,7 @@ function generateCards (cards, black) {
 
 		webshot(cardTpl({
 			name: name,
+			abbr: cardsJson.abbreviation,
 			desc: card.desc,
 			black: black,
 			pick: (pick > 0) ? pick : undefined,
