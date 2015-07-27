@@ -2,31 +2,62 @@ var webshot = require('webshot')
 var fs = require('fs')
 var dot = require('dot')
 var R = require('ramda')
+var path = require('path')
 
 var width = 2466
 var height = 3366
 
 var cardTpl = dot.template(fs.readFileSync('card.dotjs.html', { encoding: 'utf8' }))
 
-var cards = JSON.parse(fs.readFileSync('cards.json', { encoding: 'utf8' }))
+var cardsJson = JSON.parse(fs.readFileSync('cards.json', { encoding: 'utf8' }))
 
-var wi = 0
-
-cards.white.forEach(function (card) {
-	++wi
-	console.log('[' + wi + '/' + cards.white.length + '] ' + (card.name || card))
-	webshot(cardTpl({
-		name: card.name || card,
-		desc: card.desc
-	}), 'white' + wi + '.png', {
+function generateCards (cards, black) {
+	var i = 0
+	var cardType = black ? 'black' : 'white'
+	var cardPath = path.join('cards/', cardType)
+	var webshotOpts = {
 		siteType: 'html',
 		screenSize: {
 			width: width,
 			height: height
 		}
-	}, function (err) {
+	}
+	var errFn = function (err) {
 		if (err) {
 			throw err
 		}
+	}
+
+	console.log('Generating Card Back')
+	webshot(cardTpl({
+		name: 'DevOps<br />Against<br />Humanity',
+		black: black,
+		back: true
+	}),
+		path.join(cardPath, cardType + '_back.png'),
+		webshotOpts,
+		errFn
+	)
+
+	cards.forEach(function (card) {
+		++i
+
+		console.log('[' + i + '/' + cards.length + '] ' + (card.name || card))
+
+		webshot(cardTpl({
+			name: card.name || card,
+			desc: card.desc,
+			black: black
+		}),
+			path.join(cardPath, cardType + i + '.png'),
+			webshotOpts,
+			errFn
+		)
 	})
-})
+}
+
+console.log('Generating White Cards')
+generateCards(cardsJson.white)
+
+console.log('Generating Black Cards')
+generateCards(cardsJson.black, true)
