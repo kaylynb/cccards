@@ -14,11 +14,19 @@
 			margin-left: 260px;
 			padding: 0;
 		}
+		content {
+
+		}
 		content h1 {
-			padding-right: 500px;
-			padding-top: 260px;
 			font-size: 200%;
 			line-height: 120%;
+			padding-right: 500px;
+			padding-top: 260px;
+		}
+		content p {
+			font-weight: normal;
+			font-size: 140%;
+			padding-right: 500px;
 		}
 		footer {
 			position: absolute;
@@ -62,7 +70,8 @@
 	</head>
 	<body>
 	<content>
-		<h1>{{= it.content }}</h1>
+		<h1>{{= it.name }}</h1>
+		{{? it.desc }}<p>{{= it.desc }}</p>{{?}}
 	</content>
 	<footer>
 		<span class="logo">

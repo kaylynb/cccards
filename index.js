@@ -14,9 +14,10 @@ var wi = 0
 
 cards.white.forEach(function (card) {
 	++wi
-	console.log('[' + wi + '/' + cards.white.length + '] ' + card)
+	console.log('[' + wi + '/' + cards.white.length + '] ' + (card.name || card))
 	webshot(cardTpl({
-		content: card
+		name: card.name || card,
+		desc: card.desc
 	}), 'white' + wi + '.png', {
 		siteType: 'html',
 		screenSize: {
