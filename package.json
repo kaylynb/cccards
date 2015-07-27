@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kaylynb/cccards#readme",
   "dependencies": {
     "dot": "^1.0.3",
+    "ramda": "^0.17.1",
     "webshot": "^0.16.0"
   }
 }

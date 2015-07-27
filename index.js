@@ -1,30 +1,31 @@
 var webshot = require('webshot')
 var fs = require('fs')
 var dot = require('dot')
-dot.templateSettings.strip = false
+var R = require('ramda')
 
 var width = 2466
 var height = 3366
 
-var card = fs.readFileSync('card.dotjs.html', { encoding: 'utf8' })
-var tpl = dot.template(card)
+var cardTpl = dot.template(fs.readFileSync('card.dotjs.html', { encoding: 'utf8' }))
 
-var result = tpl({
-	black: true,
-	pick: 1,
-	draw: 1,
-	content: 'A CORBA service written in Ada which communicates using JSONx'
-})
+var cards = JSON.parse(fs.readFileSync('cards.json', { encoding: 'utf8' }))
 
-webshot(result, 'test.png', {
-	siteType: 'html',
-	screenSize:
-		{
+var wi = 0
+
+cards.white.forEach(function (card) {
+	++wi
+	console.log('[' + wi + '/' + cards.white.length + '] ' + card)
+	webshot(cardTpl({
+		content: card
+	}), 'white' + wi + '.png', {
+		siteType: 'html',
+		screenSize: {
 			width: width,
 			height: height
 		}
-	}, function(err) {
-	if (err) {
-		console.log(err)
-	}
+	}, function (err) {
+		if (err) {
+			throw err
+		}
+	})
 })
