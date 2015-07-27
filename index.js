@@ -10,11 +10,11 @@ var card = fs.readFileSync('card.dotjs.html', { encoding: 'utf8' })
 var tpl = dot.template(card)
 
 var result = tpl({
+	black: true,
 	pick: 1,
+	draw: 1,
 	content: 'A CORBA service written in Ada which communicates using JSONx'
 })
-
-fs.writeFileSync('test.html', result)
 
 webshot(result, 'test.png', {
 	siteType: 'html',
