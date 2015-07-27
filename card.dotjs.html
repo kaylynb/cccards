@@ -2,10 +2,11 @@
 	<head>
 		<style>
 		html {
-			background-color: white;
+			background-color: {{? it.black }}black{{??}}white{{?}};
 			font-family: "Helvetica";
 			font-style: bold;
 			font-size: 100px;
+			color: {{? it.black }}white{{??}}black{{?}};
 		}
 		body {
 			margin: 0;
@@ -34,6 +35,10 @@
 			padding-top: 45px;
 		}
 
+		footer div.pickdraw {
+			float: left;
+		}
+
 		</style>
 	</head>
 	<body>
@@ -41,12 +46,18 @@
 		<h1>{{= it.content }}</h1>
 	</content>
 	<footer>
+		<span class="logo">
 			<svg viewBox="0 0 100 120" width="400px" height="400px">
-		<rect x="0" y="15" height="50" width="50" transform="rotate(-15, 10, 10)" style="fill:#231F20;" />
+		<rect x="0" y="15" height="50" width="50" transform="rotate(-15, 10, 10)" style="fill:#231F20; stroke:#fff;" />
 		<rect x="30" y="10" height="50" width="50" style="stroke:#fff; fill:#626366;"/>
 		<rect x="60", y="-3" height="50" width="50" transform="rotate(15, 10, 10)"style="stroke:#fff; fill:#C6C8CA;"/>
 		</svg>
-		<h1>DevOps Against Humanity</h1>
+		<h1>{{? it.pick }}DAH{{??}}DevOps Against Humanity{{?}}</h1>
+		</span>
+		<span class="pickdraw">
+			<p>PICK</p>
+			<p>2</p>
+		</span>
 	</footer>
 	</body>
 </html>
