@@ -7,7 +7,7 @@ This is being used to generate a custom printed deck of [DevOps Against Humanity
 
 ### Examples - (Low Resolution For Your Sanity)
 ![Black Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black3.png)
-<img src="https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png" border="1" alt="White Card" />
+<img src="https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png" style="border: 1px solid black;" alt="White Card" />
 ![Card Back](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black_back.png)
 
 ## How
