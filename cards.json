@@ -21,8 +21,12 @@
 		},
 		{
 			"name": "Edward Snowden",
-			"desc": "American computer professional, former CIA employee."
+			"desc": "American computer professional & former CIA employee."
 		},
-		"Microsoft® Azure."
+		"Microsoft® Azure.",
+		{
+			"name": "Richard Stallman's Neckbeard.",
+			"desc": "Created Emacs."
+		}
 	]
 }
