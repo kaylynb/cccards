@@ -14,6 +14,15 @@
 		{
 			"name": "RFC 1149.",
 			"desc": "A Standard for the Transmission of IP Datagrams on Avian Carriers."
-		}
+		},
+		{
+			"name": "Larry Ellison",
+			"desc": "American programmer, internet entrepreneur, businessman and philanthropist. Also Oracle."
+		},
+		{
+			"name": "Edward Snowden",
+			"desc": "American computer professional, former CIA employee."
+		},
+		"Microsoft® Azure."
 	]
 }
