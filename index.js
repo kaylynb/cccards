@@ -30,7 +30,7 @@ function generateCards (cards, black) {
 
 	console.log('Generating Card Back')
 	webshot(cardTpl({
-		name: 'DevOps<br />Against<br />Humanity',
+		name: cardsJson.title,
 		black: black,
 		back: true
 	}),
@@ -40,14 +40,24 @@ function generateCards (cards, black) {
 	)
 
 	cards.forEach(function (card) {
+		var pick = 0
+		var name = card.name || card
 		++i
 
-		console.log('[' + i + '/' + cards.length + '] ' + (card.name || card))
+		console.log('[' + i + '/' + cards.length + '] ' + name)
+
+		if (black) {
+			var splits = name.split('_')
+			pick = splits.length - 1
+			name = splits.join('______')
+		}
 
 		webshot(cardTpl({
-			name: card.name || card,
+			name: name,
 			desc: card.desc,
-			black: black
+			black: black,
+			pick: (pick > 0) ? pick : undefined,
+			draw: (pick > 2) ? pick - 1 : undefined
 		}),
 			path.join(cardPath, cardType + i + '.png'),
 			webshotOpts,

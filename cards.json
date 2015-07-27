@@ -1,7 +1,9 @@
 {
+	"title": "DevOps<br />Against<br />Humanity",
 	"black": [
-		"Enterprise-ready _",
-		"Hi, I'm Troy McClure. You may remember me from such commit messages as _ and _."
+		"Enterprise-ready _.",
+		"Hi, I'm Troy McClure. You may remember me from such commit messages as _ and _.",
+		"The two pillars of our Continuous Deployment pipeline are _ and _."
 	],
 	"white": [
 		"A whale moving shipping containers.",
@@ -9,8 +11,8 @@
 		"lolscale.",
 		"Systemd.",
 		{
-			"name": "RFC 1149",
-			"desc": "A Standard for the Transmission of IP Datagrams on Avian Carriers"
+			"name": "RFC 1149.",
+			"desc": "A Standard for the Transmission of IP Datagrams on Avian Carriers."
 		}
 	]
 }
