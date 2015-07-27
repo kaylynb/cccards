@@ -5,6 +5,11 @@ This generates 'Cards Against Humanity' style cards. Standard poker card sized a
 
 This is being used to generate a custom printed deck of [DevOps Against Humanity](https://github.com/bridgetkromhout/devops-against-humanity), so the card data is that, and not CAH.
 
+### Example
+![Black Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black3.png)
+![White Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png)
+![Card Back](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black_back.png)
+
 ## How
 You need `phantomjs` installed. This renders each card as a page in phantom, and saves it as a png.
 
