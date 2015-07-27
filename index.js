@@ -1,7 +1,6 @@
 var webshot = require('webshot')
 var fs = require('fs')
 var dot = require('dot')
-var R = require('ramda')
 var path = require('path')
 
 var width = 2466
