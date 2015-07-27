@@ -5,9 +5,9 @@ This generates 'Cards Against Humanity' style cards. Standard poker card sized a
 
 This is being used to generate a custom printed deck of [DevOps Against Humanity](https://github.com/bridgetkromhout/devops-against-humanity), so the card data is that, and not CAH.
 
-### Example
+### Examples - (Low Resolution For Your Sanity)
 ![Black Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black3.png)
-![White Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png)
+<img src="https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png" border="1" alt="White Card" />
 ![Card Back](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black_back.png)
 
 ## How
