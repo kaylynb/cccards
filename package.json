@@ -19,6 +19,7 @@
   "dependencies": {
     "async": "^1.4.0",
     "dot": "^1.0.3",
-    "webshot": "^0.16.0"
+    "webshot": "^0.16.0",
+    "xlsx": "^0.8.0"
   }
 }

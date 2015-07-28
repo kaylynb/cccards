@@ -1,36 +1,1212 @@
 {
-	"title": "DevOps<br />Against<br />Humanity",
-	"abbreviation": "DAH",
-	"black": [
-		"Enterprise-ready _.",
-		"Hi, I'm Troy McClure. You may remember me from such commit messages as _ and _.",
-		"The two pillars of our Continuous Deployment pipeline are _ and _."
-	],
-	"white": [
-		"A whale moving shipping containers.",
-		"Agile.",
-		"lolscale.",
-		"Systemd.",
-		{
-			"name": "RFC 1149.",
-			"desc": "A Standard for the Transmission of IP Datagrams on Avian Carriers."
-		},
-		{
-			"name": "Larry Ellison",
-			"desc": "American programmer, internet entrepreneur, businessman and philanthropist. Also Oracle."
-		},
-		{
-			"name": "Edward Snowden",
-			"desc": "American computer professional & former CIA employee."
-		},
-		"Microsoft® Azure.",
-		{
-			"name": "Richard Stallman's Neckbeard.",
-			"desc": "Created Emacs."
-		},
-		{
-			"name": "fortune | cowsay -f vader",
-			"desc": "<pre> ____________________________ \n/ A few hours grace before   \\\n\\ the madness begins again.  /\n ---------------------------- \n        \\    ,-^-.\n         \\   !oYo!\n          \\ /./=\\.\\______\n               ##        )\\/\\\n                ||-----w||\n                ||      ||\n\n               Cowth Vader\n</pre>"
-		}
-	]
+  "title": "DevOps<br />Against<br />Humanity",
+  "abbreviation": "DAH",
+  "black": [
+    {
+      "name": "Enterprise _ in the cloud."
+    },
+    {
+      "name": "Enterprise-ready _."
+    },
+    {
+      "name": "Hi, I'm Troy McClure. You may remember me from such commit messages as _ and _."
+    },
+    {
+      "name": "If _ is the answer, you are asking the wrong question."
+    },
+    {
+      "name": "Running Windows in production leads to _."
+    },
+    {
+      "name": "Our release schedule doesn't have time for _."
+    },
+    {
+      "name": "WARN: _ has been deprecated."
+    },
+    {
+      "name": "Zero-day _."
+    },
+    {
+      "name": "Google says we should _."
+    },
+    {
+      "name": "Etsy says we should _ everything."
+    },
+    {
+      "name": "Main benefits of automation: _ and _."
+    },
+    {
+      "name": "...and then there was the time I found _ on the root partition."
+    },
+    {
+      "name": "We run production on _ and _."
+    },
+    {
+      "name": "Management said it's OK to deploy _ at 17:00 on Friday."
+    },
+    {
+      "name": "There was no good solution for _, so we built our own."
+    },
+    {
+      "name": "In order to improve security, we're upgrading to _."
+    },
+    {
+      "name": "The two pillars of our Continuous Deployment pipeline are _ and _."
+    },
+    {
+      "name": "The most stable part of our infrastructure? _."
+    },
+    {
+      "name": "When I told Jez Humble about our _, he actually cried."
+    },
+    {
+      "name": "When I write a book about my experiences, it'll be called \"_, the good parts\""
+    },
+    {
+      "name": "Restoring from backups failed due to _."
+    },
+    {
+      "name": "My two most indispensable tools are _ and _."
+    },
+    {
+      "name": "You should think of your servers like _ and not like _."
+    },
+    {
+      "name": "I find Java to be way too _."
+    },
+    {
+      "name": "It's like trying to herd _."
+    },
+    {
+      "name": "_ Driven Development."
+    },
+    {
+      "name": "Security? We've got that! We use _."
+    },
+    {
+      "name": "My next blog post will be about how we used _ to create _."
+    },
+    {
+      "name": "Marketing says we're leaders in the _ space, but I think it's more accurate to say we specialize in _."
+    },
+    {
+      "name": "We really need to open-source our _."
+    },
+    {
+      "name": "Who would have known that _ could destroy an entire datacenter?"
+    },
+    {
+      "name": "Our production backups are stored using _."
+    },
+    {
+      "name": "Our competitive advantage is our _."
+    },
+    {
+      "name": "Continuous _."
+    },
+    {
+      "name": "Our entire app is geared towards providing _."
+    },
+    {
+      "name": "We don't need configuration management, we have _!"
+    },
+    {
+      "name": "NoSQL is superior to SQL because _."
+    },
+    {
+      "name": "It's not web scale, it's _."
+    },
+    {
+      "name": "Asynchronous REST API calls are the solution to _."
+    },
+    {
+      "name": "_ isn't a job title."
+    },
+    {
+      "name": "For the next project we are going to use _ to solve _."
+    },
+    {
+      "name": "My editor of choice is _."
+    },
+    {
+      "name": "_-Stack Developer."
+    },
+    {
+      "name": "_-SQL."
+    },
+    {
+      "name": "We run _ in a cron job every 15 minutes."
+    },
+    {
+      "name": "The client says it needs more _."
+    },
+    {
+      "name": "We're a _ as a Service company."
+    },
+    {
+      "name": "C will finally be displaced by _."
+    },
+    {
+      "name": "_.io"
+    },
+    {
+      "name": "We don't need backups, we've got _."
+    },
+    {
+      "name": "_ isn't new, we used to do it in the '70s on mainframes."
+    },
+    {
+      "name": "We took the plunge and rewrote _ in Go."
+    },
+    {
+      "name": "Implementing _ should take only 2 lines of code."
+    },
+    {
+      "name": "Security through _."
+    },
+    {
+      "name": "_ worked in dev."
+    },
+    {
+      "name": "How hard could it be to port Linux to _."
+    },
+    {
+      "name": "Can anyone help me get _ running on Cisco IOS?"
+    },
+    {
+      "name": "I cut-and-pasted this StackOverflow code for my _."
+    },
+    {
+      "name": "We can discuss _ at the stand‑up meeting."
+    },
+    {
+      "name": "Conway's Game of _."
+    },
+    {
+      "name": "s/_/_/g"
+    },
+    {
+      "name": "_ is the newest gTLD."
+    },
+    {
+      "name": "One does not simply _."
+    },
+    {
+      "name": "Sorry, you'll need to open a ticket before we can _."
+    },
+    {
+      "name": "It's like _, but with _ and list comprehensions."
+    },
+    {
+      "name": "Amazon does _, why can't we?"
+    },
+    {
+      "name": "_ would be so much better if we rewrote it in Clojure."
+    },
+    {
+      "name": "Why is root running _ under tmux?"
+    },
+    {
+      "name": "Why don't we just fork _?"
+    },
+    {
+      "name": "We turned off _ and everything magically got better."
+    },
+    {
+      "name": "Read-eval-_-loop."
+    },
+    {
+      "name": "_ Considered Harmful."
+    },
+    {
+      "name": "modperl can be used to implement _."
+    },
+    {
+      "name": "Our new startup is the _ for _."
+    },
+    {
+      "name": "We can _ just like Netflix."
+    },
+    {
+      "name": "_ is how I resolve all merge conflicts."
+    },
+    {
+      "name": "Why does someone keep re-implementing system utilities in _?"
+    },
+    {
+      "name": "Our only hope at recovering the data is _."
+    },
+    {
+      "name": "The first 90% of development is _. The second 90% is _."
+    },
+    {
+      "name": "We don't have to worry about CAP theorem because of _."
+    },
+    {
+      "name": "We wrote our own build tool based on _."
+    },
+    {
+      "name": "The backups are fine, but the restore process is _."
+    },
+    {
+      "name": "Oracle is proud to announce that the next edition of Java features _."
+    },
+    {
+      "name": "I opened the server cabinet and it was full of _."
+    },
+    {
+      "name": "I once wrote an NPM module called _.js."
+    },
+    {
+      "name": "It compiles _ to JavaScript."
+    },
+    {
+      "name": "Given _.<br />When _.<br />Then _."
+    },
+    {
+      "name": "With _, you write once, run nowhere."
+    },
+    {
+      "name": "//TODO: _."
+    },
+    {
+      "name": "Of course culture is important to us, that's why we have _."
+    },
+    {
+      "name": "Monads are easy! Just think of them as _."
+    },
+    {
+      "name": "_: powered by the cloud."
+    },
+    {
+      "name": "#!/bin/_"
+    },
+    {
+      "name": "Don't worry, we have unit tests for _."
+    },
+    {
+      "name": "As a _, I want _."
+    },
+    {
+      "name": "_ @ 127.0.0.1 \\<br />-p _"
+    },
+    {
+      "name": "Our backup policy is _."
+    },
+    {
+      "name": "I saw a High Scalability blog post about _."
+    },
+    {
+      "name": "IBM just created JSONxx to encapsulate JSON in XML in _."
+    },
+    {
+      "name": "The Agile Manifesto taught me to pick _ over _."
+    },
+    {
+      "name": "_ should be a singleton!"
+    },
+    {
+      "name": "JavaScript is the best language ever, thanks to _."
+    },
+    {
+      "name": "_: Easy one‑step installation."
+    },
+    {
+      "name": "Code as _."
+    },
+    {
+      "name": "_ is how the cloud works."
+    },
+    {
+      "name": "The _ shell."
+    },
+    {
+      "name": "_ in Haskell."
+    },
+    {
+      "name": "140 characters is just enough to explain _."
+    },
+    {
+      "name": "_ all the way down."
+    },
+    {
+      "name": "Elliptic‑Curve Diffie‑Hellman breaks against _."
+    },
+    {
+      "name": "We would have gotten the funding, if only our slide deck included _."
+    },
+    {
+      "name": "My pre-commit hook replaces tab characters with _."
+    },
+    {
+      "name": "Since the 1950s, engineers have been striving toward a more effective means of generating _."
+    },
+    {
+      "name": "#!/bin/sh<br />_<br />exit 0"
+    }
+  ],
+  "white": [
+    {
+      "name": "Developers."
+    },
+    {
+      "name": "Git."
+    },
+    {
+      "name": "Golang."
+    },
+    {
+      "name": "vi."
+    },
+    {
+      "name": "Hacker News."
+    },
+    {
+      "name": "Larry Ellison.",
+      "desc": "American programmer, internet entrepreneur, businessman and philanthropist. Co‑founder & CTO of Oracle. Currently resides in a replica of a 16th‑century samurai village."
+    },
+    {
+      "name": "Leaky abstractions."
+    },
+    {
+      "name": "Meritocracy."
+    },
+    {
+      "name": "MongoDB."
+    },
+    {
+      "name": "Node.js."
+    },
+    {
+      "name": "NPM."
+    },
+    {
+      "name": "Python."
+    },
+    {
+      "name": "Rebasing."
+    },
+    {
+      "name": "Ruby."
+    },
+    {
+      "name": "Running out of IPv4 addresses."
+    },
+    {
+      "name": "Sysadmins."
+    },
+    {
+      "name": "Thought leadership."
+    },
+    {
+      "name": "Twitter."
+    },
+    {
+      "name": "Unicode errors."
+    },
+    {
+      "name": "OpenSSL."
+    },
+    {
+      "name": "Heartbleed."
+    },
+    {
+      "name": "The NSA."
+    },
+    {
+      "name": "Edward Snowden.",
+      "desc": "American computer professional & former CIA employee."
+    },
+    {
+      "name": "Google."
+    },
+    {
+      "name": "Functional programming."
+    },
+    {
+      "name": "PHP."
+    },
+    {
+      "name": "SVN."
+    },
+    {
+      "name": "Perl."
+    },
+    {
+      "name": "2400 baud modem."
+    },
+    {
+      "name": "CAP theorem."
+    },
+    {
+      "name": "Snowflake server."
+    },
+    {
+      "name": "Apache 1.2 running as root."
+    },
+    {
+      "name": "VisualBasic DLLs."
+    },
+    {
+      "name": "A JAR."
+    },
+    {
+      "name": "The Sales & Marketing department."
+    },
+    {
+      "name": "Business logic in PowerPoint slides."
+    },
+    {
+      "name": "A shared root password."
+    },
+    {
+      "name": "Private keys in /var/www."
+    },
+    {
+      "name": "Parsing HTML with regex."
+    },
+    {
+      "name": "A 3.5\" floppy disk."
+    },
+    {
+      "name": "An untested restore process."
+    },
+    {
+      "name": "A cron job that reboots the server every 5 minutes."
+    },
+    {
+      "name": "Sadness as a Service."
+    },
+    {
+      "name": "Cloud-based business strategy."
+    },
+    {
+      "name": "Cloud 2.0"
+    },
+    {
+      "name": "A CORBA service written in Ada which communicates using JSONx."
+    },
+    {
+      "name": "Agony-Driven Development."
+    },
+    {
+      "name": "Being acquired by Oracle."
+    },
+    {
+      "name": "Catastrophic Failure as a Service."
+    },
+    {
+      "name": "A global write lock."
+    },
+    {
+      "name": "75-tier architecture."
+    },
+    {
+      "name": "Hand-crafted artisan x86 assembly code."
+    },
+    {
+      "name": "An Exchange email loop."
+    },
+    {
+      "name": "A Volker-Craig terminal."
+    },
+    {
+      "name": "A self-aware PHP script."
+    },
+    {
+      "name": "A 500-megabyte UDP packet."
+    },
+    {
+      "name": "The last remaining Multics server on Earth."
+    },
+    {
+      "name": "A Null modem cable."
+    },
+    {
+      "name": "Netscape Navigator 3.2 support."
+    },
+    {
+      "name": "dd."
+    },
+    {
+      "name": "Mutation of immutable data."
+    },
+    {
+      "name": "Maven downloading the entire internet."
+    },
+    {
+      "name": "Continuous Disintegration."
+    },
+    {
+      "name": "IE6."
+    },
+    {
+      "name": "Magic smoke."
+    },
+    {
+      "name": "done done."
+    },
+    {
+      "name": "Adderall."
+    },
+    {
+      "name": "Tcl."
+    },
+    {
+      "name": "A whale moving shipping containers."
+    },
+    {
+      "name": "Too big data."
+    },
+    {
+      "name": "Freebasing caffeine."
+    },
+    {
+      "name": "Half open TCP connections."
+    },
+    {
+      "name": "A 50k line Bash script."
+    },
+    {
+      "name": "Agile."
+    },
+    {
+      "name": "lolscale."
+    },
+    {
+      "name": "CouchDB."
+    },
+    {
+      "name": "High Availability."
+    },
+    {
+      "name": "MapReduce."
+    },
+    {
+      "name": "Erlang."
+    },
+    {
+      "name": "Systemd."
+    },
+    {
+      "name": "12 factor application."
+    },
+    {
+      "name": "Fail early, fail often."
+    },
+    {
+      "name": "Regex."
+    },
+    {
+      "name": "A queue with no consumers."
+    },
+    {
+      "name": "Bitcoin mining."
+    },
+    {
+      "name": "An uncontrollable deluge of emails."
+    },
+    {
+      "name": "Y Combinator."
+    },
+    {
+      "name": "A jailbroken iPad."
+    },
+    {
+      "name": "Vagrant."
+    },
+    {
+      "name": "Docker."
+    },
+    {
+      "name": "ssh in a for loop."
+    },
+    {
+      "name": "A dozen vendor t‑shirts."
+    },
+    {
+      "name": "UTF-7."
+    },
+    {
+      "name": "sudo rm -rf /"
+    },
+    {
+      "name": "kill -9"
+    },
+    {
+      "name": "Dogecoin."
+    },
+    {
+      "name": "Kernel panic."
+    },
+    {
+      "name": "IE9."
+    },
+    {
+      "name": "Unix philosophy."
+    },
+    {
+      "name": "A server rack full of crushed dreams."
+    },
+    {
+      "name": "Monads."
+    },
+    {
+      "name": "Elastic Load Balancers."
+    },
+    {
+      "name": "RFC1178.",
+      "desc": "Choosing a Name for Your Computer."
+    },
+    {
+      "name": "Full-stack developer."
+    },
+    {
+      "name": "A potato."
+    },
+    {
+      "name": "Office Space."
+    },
+    {
+      "name": "Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers!"
+    },
+    {
+      "name": "Significant whitespace."
+    },
+    {
+      "name": "Secret sauce."
+    },
+    {
+      "name": "Read-only Fridays."
+    },
+    {
+      "name": "Distributed computing."
+    },
+    {
+      "name": "Sprint planning."
+    },
+    {
+      "name": "Merge conflicts."
+    },
+    {
+      "name": "HipChat."
+    },
+    {
+      "name": "An IRC bot written entirely in sed."
+    },
+    {
+      "name": "COBOL."
+    },
+    {
+      "name": "DNS."
+    },
+    {
+      "name": "Animated GIF."
+    },
+    {
+      "name": "PC LOAD LETTER."
+    },
+    {
+      "name": "Automate."
+    },
+    {
+      "name": "Cache."
+    },
+    {
+      "name": "Proxy."
+    },
+    {
+      "name": "Blue Screen Of Death."
+    },
+    {
+      "name": "ISO 8601.",
+      "desc": "Something About Date Interchange Formats."
+    },
+    {
+      "name": "Linus Torvalds.",
+      "desc": "Finnish American software engineer, and something about Linux & Git."
+    },
+    {
+      "name": "RFC 1149.",
+      "desc": "A Standard for the Transmission of IP Datagrams on Avian Carriers."
+    },
+    {
+      "name": "IPSec."
+    },
+    {
+      "name": "Hackathon."
+    },
+    {
+      "name": "GNU/Linux."
+    },
+    {
+      "name": "ZeroMQ over SSH."
+    },
+    {
+      "name": "SQLite."
+    },
+    {
+      "name": "LevelDB."
+    },
+    {
+      "name": "Java Virtual Machine."
+    },
+    {
+      "name": "Tor."
+    },
+    {
+      "name": "bash."
+    },
+    {
+      "name": "numactl."
+    },
+    {
+      "name": "zsh."
+    },
+    {
+      "name": "Vegan-friendly init scripts."
+    },
+    {
+      "name": "Committing from the bar."
+    },
+    {
+      "name": "Servers that follow daylight saving time."
+    },
+    {
+      "name": "Rolling Grubhub into the failed build script."
+    },
+    {
+      "name": "Command line options."
+    },
+    {
+      "name": "Temporary hotfixes."
+    },
+    {
+      "name": "jsLinux."
+    },
+    {
+      "name": "SIGKILL."
+    },
+    {
+      "name": "top."
+    },
+    {
+      "name": "rsync."
+    },
+    {
+      "name": "CFLAGS."
+    },
+    {
+      "name": "fortune | cowsay \\<br />-f vader",
+      "desc": "<pre> ___________________________\n/ A few hours grace before  \\\n\\ the madness begins again  /\n ---------------------------\n        \\    ,-^-.\n         \\   !oYo!\n          \\ /./=\\.\\______\n               ##        )\\/\\\n                ||-----w||\n                ||      ||\n\n               Cowth Vader</pre>"
+    },
+    {
+      "name": "Gentoo."
+    },
+    {
+      "name": "The CEO."
+    },
+    {
+      "name": "Ping Pong."
+    },
+    {
+      "name": "Dennis Ritchie.",
+      "desc": "American computer scientist. Maybe did something with C or UNIX at some point."
+    },
+    {
+      "name": "FAT32."
+    },
+    {
+      "name": "winsock."
+    },
+    {
+      "name": "fork() on Windows."
+    },
+    {
+      "name": "runlists."
+    },
+    {
+      "name": "sudo."
+    },
+    {
+      "name": "kill -9 -1"
+    },
+    {
+      "name": "HTML9 Responsive Boilerstrap JS."
+    },
+    {
+      "name": "A Certified SCRUM Master."
+    },
+    {
+      "name": "Bus error."
+    },
+    {
+      "name": "git reset --hard origin/master"
+    },
+    {
+      "name": "Forcing push to master."
+    },
+    {
+      "name": "Raspberry Pi."
+    },
+    {
+      "name": "Windows ME."
+    },
+    {
+      "name": "Active Directory."
+    },
+    {
+      "name": "The gentle sound of weeping drifting from the server room."
+    },
+    {
+      "name": "Eventual consistency."
+    },
+    {
+      "name": "Azure."
+    },
+    {
+      "name": "127.0.0.1"
+    },
+    {
+      "name": "Ethernet."
+    },
+    {
+      "name": "IPv6."
+    },
+    {
+      "name": "Re-writing deployment scripts at 2 AM."
+    },
+    {
+      "name": "A pseudorandom number generator."
+    },
+    {
+      "name": "Richard Stallman's Neckbeard.",
+      "desc": "Founder of The Church of Emacs."
+    },
+    {
+      "name": "phpMyAdmin."
+    },
+    {
+      "name": "/etc/hosts"
+    },
+    {
+      "name": "CEOs with root access."
+    },
+    {
+      "name": "Re-implementing TCP over UDP."
+    },
+    {
+      "name": "git submodules."
+    },
+    {
+      "name": "Haskell."
+    },
+    {
+      "name": "Jenkins."
+    },
+    {
+      "name": "Scala."
+    },
+    {
+      "name": "WONTFIX."
+    },
+    {
+      "name": "Trello board."
+    },
+    {
+      "name": "Friday afternoon deployment."
+    },
+    {
+      "name": "Github selfies."
+    },
+    {
+      "name": "Production deployments that depend on GitHub."
+    },
+    {
+      "name": "RFC 2324.",
+      "desc": "Hyper Text Coffee Pot Control Protocol (HTCPCP/1.0)."
+    },
+    {
+      "name": "Web scale."
+    },
+    {
+      "name": "Brainfuck.",
+      "desc": "Esoteric programming language."
+    },
+    {
+      "name": "Deduplication."
+    },
+    {
+      "name": "The Ballmer Peak."
+    },
+    {
+      "name": "0xDEADBEEF."
+    },
+    {
+      "name": "Patrick Debois.",
+      "desc": "#devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops"
+    },
+    {
+      "name": "git merge --force"
+    },
+    {
+      "name": "A series of tubes."
+    },
+    {
+      "name": "The library that imports all other libraries."
+    },
+    {
+      "name": "The tech lead's shitty pet project."
+    },
+    {
+      "name": "An entirely commented out file."
+    },
+    {
+      "name": "cron jobs that edit cron jobs."
+    },
+    {
+      "name": "/dev/null"
+    },
+    {
+      "name": "Little Bobby Tables.",
+      "desc": "Robert'); DROP TABLE Students;--"
+    },
+    {
+      "name": "Solar flares."
+    },
+    {
+      "name": "Global warming."
+    },
+    {
+      "name": "Reticulating splines."
+    },
+    {
+      "name": "Re-implementing TCP over TCP."
+    },
+    {
+      "name": "Mixed endianness."
+    },
+    {
+      "name": "OAuth."
+    },
+    {
+      "name": "traceroute."
+    },
+    {
+      "name": "Rockstar."
+    },
+    {
+      "name": "Packet loss."
+    },
+    {
+      "name": "Works on my machine."
+    },
+    {
+      "name": "malloc."
+    },
+    {
+      "name": "Buffer overflow."
+    },
+    {
+      "name": "Server logs."
+    },
+    {
+      "name": "The Unix epoch."
+    },
+    {
+      "name": "0-day exploits."
+    },
+    {
+      "name": "Tribal knowledge."
+    },
+    {
+      "name": "PyPi."
+    },
+    {
+      "name": "Synergy."
+    },
+    {
+      "name": "Ansible."
+    },
+    {
+      "name": "sendmail."
+    },
+    {
+      "name": "Bare metal."
+    },
+    {
+      "name": "Bazaar."
+    },
+    {
+      "name": "Home-grown monitoring solution."
+    },
+    {
+      "name": "Arch Linux in production."
+    },
+    {
+      "name": "Solaris."
+    },
+    {
+      "name": "Flux Capacitor."
+    },
+    {
+      "name": "The Gang of Four becoming a real gang."
+    },
+    {
+      "name": "Legacy code you're terrified of deleting."
+    },
+    {
+      "name": "That one goddamn line."
+    },
+    {
+      "name": "The travelling salesman problem."
+    },
+    {
+      "name": "The Genius Bar."
+    },
+    {
+      "name": "The waterfall model."
+    },
+    {
+      "name": "Spaces and tabs in the same file."
+    },
+    {
+      "name": "iptables."
+    },
+    {
+      "name": "RHEL 5."
+    },
+    {
+      "name": "<svg        xmlns=\"http://www.w3.org/2000/svg\"\n        version=\"1.0\" width=\"1200\" height=\"500\" overflow=\"scroll\">\n<title>LaTeX logo</title>\n<g transform=\"matrix(45,0,0,45,40,40)\" fill=\"black\">\n        <path transform=\"translate(0,0.17)\" d=\"M5.46,4.23 C5.46,4.23 5.21,4.23 5.21,4.23 C5.11,5.25 4.97,6.49 3.21,6.49 C3.21,6.49 2.4,6.49 2.4,6.49 C1.93,6.49 1.91,6.42 1.91,6.09 C1.91,6.09 1.91,0.78 1.91,0.78 C1.91,0.44 1.91,0.3 2.85,0.3 C2.85,0.3 3.18,0.3 3.18,0.3 C3.18,0.3 3.18,0 3.18,0 C2.82,0.03 1.92,0.03 1.51,0.03 C1.12,0.03 0.34,0.03 0,0 C0,0 0,0.3 0,0.3 C0,0.3 0.23,0.3 0.23,0.3 C1,0.3 1.02,0.41 1.02,0.77 C1.02,0.77 1.02,6.02 1.02,6.02 C1.02,6.38 1,6.49 0.23,6.49 C0.23,6.49 0,6.49 0,6.49 C0,6.49 0,6.8 0,6.8 C0,6.8 5.19,6.8 5.19,6.8 C5.19,6.8 5.46,4.23 5.46,4.23 z\"/>\n        <path transform=\"translate(2.48)\" d=\"M2.81,0.16 C2.77,0.04 2.75,0 2.62,0 C2.49,0 2.46,0.04 2.42,0.16 C2.42,0.16 0.81,4.24 0.81,4.24 C0.74,4.41 0.62,4.72 0,4.72 C0,4.72 0,4.97 0,4.97 C0,4.97 1.55,4.97 1.55,4.97 C1.55,4.97 1.55,4.72 1.55,4.72 C1.24,4.72 1.05,4.58 1.05,4.38 C1.05,4.33 1.06,4.31 1.08,4.24 C1.08,4.24 1.42,3.38 1.42,3.38 C1.42,3.38 3.4,3.38 3.4,3.38 C3.4,3.38 3.8,4.4 3.8,4.4 C3.82,4.44 3.84,4.49 3.84,4.52 C3.84,4.72 3.46,4.72 3.27,4.72 C3.27,4.72 3.27,4.97 3.27,4.97 C3.27,4.97 5.24,4.97 5.24,4.97 C5.24,4.97 5.24,4.72 5.24,4.72 C5.24,4.72 5.1,4.72 5.1,4.72 C4.63,4.72 4.58,4.65 4.51,4.45 C4.51,4.45 2.81,0.16 2.81,0.16 z M2.41,0.87 C2.41,0.87 3.3,3.13 3.3,3.13 C3.3,3.13 1.52,3.13 1.52,3.13 C1.52,3.13 2.41,0.87 2.41,0.87 z\"/>\n        <path transform=\"translate(7.03,0.23)\" d=\"M6.27,0 C6.27,0 0.18,0 0.18,0 C0.18,0 0,2.24 0,2.24 C0,2.24 0.24,2.24 0.24,2.24 C0.38,0.63 0.53,0.3 2.04,0.3 C2.22,0.3 2.48,0.3 2.58,0.32 C2.79,0.36 2.79,0.47 2.79,0.7 C2.79,0.7 2.79,5.95 2.79,5.95 C2.79,6.29 2.79,6.43 1.74,6.43 C1.74,6.43 1.34,6.43 1.34,6.43 C1.34,6.43 1.34,6.74 1.34,6.74 C1.75,6.71 2.76,6.71 3.22,6.71 C3.68,6.71 4.71,6.71 5.12,6.74 C5.12,6.74 5.12,6.43 5.12,6.43 C5.12,6.43 4.72,6.43 4.72,6.43 C3.67,6.43 3.67,6.29 3.67,5.95 C3.67,5.95 3.67,0.7 3.67,0.7 C3.67,0.5 3.67,0.36 3.85,0.32 C3.96,0.3 4.23,0.3 4.42,0.3 C5.92,0.3 6.07,0.63 6.21,2.24 C6.21,2.24 6.46,2.24 6.46,2.24 C6.46,2.24 6.27,0 6.27,0 z\"/>\n        <path transform=\"translate(12.5,2.45)\" d=\"M6.16,4.2 C6.16,4.2 5.91,4.2 5.91,4.2 C5.66,5.73 5.43,6.46 3.72,6.46 C3.72,6.46 2.4,6.46 2.4,6.46 C1.93,6.46 1.91,6.39 1.91,6.06 C1.91,6.06 1.91,3.4 1.91,3.4 C1.91,3.4 2.8,3.4 2.8,3.4 C3.77,3.4 3.88,3.72 3.88,4.57 C3.88,4.57 4.13,4.57 4.13,4.57 C4.13,4.57 4.13,1.93 4.13,1.93 C4.13,1.93 3.88,1.93 3.88,1.93 C3.88,2.78 3.77,3.09 2.8,3.09 C2.8,3.09 1.91,3.09 1.91,3.09 C1.91,3.09 1.91,0.7 1.91,0.7 C1.91,0.37 1.93,0.3 2.4,0.3 C2.4,0.3 3.68,0.3 3.68,0.3 C5.21,0.3 5.47,0.85 5.63,2.24 C5.63,2.24 5.88,2.24 5.88,2.24 C5.88,2.24 5.6,0 5.6,0 C5.6,0 0,0 0,0 C0,0 0,0.3 0,0.3 C0,0.3 0.23,0.3 0.23,0.3 C1,0.3 1.02,0.41 1.02,0.77 C1.02,0.77 1.02,5.99 1.02,5.99 C1.02,6.35 1,6.46 0.23,6.46 C0.23,6.46 0,6.46 0,6.46 C0,6.46 0,6.77 0,6.77 C0,6.77 5.74,6.77 5.74,6.77 C5.74,6.77 6.16,4.2 6.16,4.2 z\"/>\n        <path transform=\"translate(17.91,0.17)\" d=\"M3.76,2.95 C3.76,2.95 5.13,0.95 5.13,0.95 C5.34,0.63 5.68,0.31 6.57,0.3 C6.57,0.3 6.57,0 6.57,0 C6.57,0 4.19,0 4.19,0 C4.19,0 4.19,0.3 4.19,0.3 C4.59,0.31 4.81,0.53 4.81,0.76 C4.81,0.86 4.79,0.88 4.72,0.99 C4.72,0.99 3.58,2.67 3.58,2.67 C3.58,2.67 2.3,0.75 2.3,0.75 C2.28,0.72 2.23,0.64 2.23,0.6 C2.23,0.48 2.45,0.31 2.87,0.3 C2.87,0.3 2.87,0 2.87,0 C2.53,0.03 1.8,0.03 1.42,0.03 C1.11,0.03 0.49,0.02 0.12,0 C0.12,0 0.12,0.3 0.12,0.3 C0.12,0.3 0.31,0.3 0.31,0.3 C0.86,0.3 1.05,0.37 1.24,0.65 C1.24,0.65 3.07,3.42 3.07,3.42 C3.07,3.42 1.44,5.83 1.44,5.83 C1.3,6.03 1,6.49 0,6.49 C0,6.49 0,6.8 0,6.8 C0,6.8 2.38,6.8 2.38,6.8 C2.38,6.8 2.38,6.49 2.38,6.49 C1.92,6.48 1.75,6.21 1.75,6.03 C1.75,5.94 1.78,5.9 1.85,5.79 C1.85,5.79 3.26,3.7 3.26,3.7 C3.26,3.7 4.84,6.08 4.84,6.08 C4.86,6.12 4.89,6.16 4.89,6.19 C4.89,6.31 4.67,6.48 4.24,6.49 C4.24,6.49 4.24,6.8 4.24,6.8 C4.59,6.77 5.32,6.77 5.69,6.77 C6.11,6.77 6.57,6.78 6.99,6.8 C6.99,6.8 6.99,6.49 6.99,6.49 C6.99,6.49 6.8,6.49 6.8,6.49 C6.28,6.49 6.07,6.44 5.86,6.13 C5.86,6.13 3.76,2.95 3.76,2.95 z\"/>\n</g>\n</svg>\n",
+      "undefined": "Latex in svg for card"
+    },
+    {
+      "name": "Turning it off and on again."
+    },
+    {
+      "name": "12 hour clocks."
+    },
+    {
+      "name": "Mesos."
+    },
+    {
+      "name": "sudo chmod -R 777 /"
+    },
+    {
+      "name": "Microsoft."
+    },
+    {
+      "name": "Apple."
+    },
+    {
+      "name": "This webpage is not available."
+    },
+    {
+      "name": "65,536."
+    },
+    {
+      "name": "A datacenter migration."
+    },
+    {
+      "name": "The training budget."
+    },
+    {
+      "name": "A monoid."
+    },
+    {
+      "name": "Errors which disappear in debug builds."
+    },
+    {
+      "name": "YAML."
+    },
+    {
+      "name": "Idempotence."
+    },
+    {
+      "name": "PowerShell."
+    },
+    {
+      "name": "AngularJS."
+    },
+    {
+      "name": "Branded hoodies."
+    },
+    {
+      "name": "Series B funding."
+    },
+    {
+      "name": "A noose made out of Cat 6."
+    },
+    {
+      "name": "nginx."
+    },
+    {
+      "name": "ASCII art."
+    },
+    {
+      "name": "Water-scrum-fall."
+    },
+    {
+      "name": "Infinite loops."
+    },
+    {
+      "name": "AWK."
+    },
+    {
+      "name": "T-SQL."
+    },
+    {
+      "name": "while (true)"
+    },
+    {
+      "name": "Commenting every line of code."
+    },
+    {
+      "name": "DEFCON."
+    },
+    {
+      "name": "UNDO UNDO UNDO."
+    },
+    {
+      "name": "/dev/random"
+    },
+    {
+      "name": "Windows for Workgroups."
+    },
+    {
+      "name": "TempleOS.",
+      "desc": "64‑bit, multi‑tasking, public domain, ring‑0‑only, single‑address‑map, non‑networked, biblical themed operating system written in HolyC."
+    },
+    {
+      "name": "XSLT."
+    },
+    {
+      "name": "Bogosort."
+    },
+    {
+      "name": "Selenium."
+    },
+    {
+      "name": "LISP."
+    },
+    {
+      "name": "CTRL-C! CTRL-C! CTRL-C!"
+    },
+    {
+      "name": "grep."
+    },
+    {
+      "name": "Visual SourceSafe."
+    },
+    {
+      "name": "Team Foundation Server."
+    },
+    {
+      "name": "GNU/GPL.",
+      "desc": "This card is free paper: you can redistribute it and/or modify it under the terms of the GNU General Public License, either version 3 of the License, of (at your option) any later version."
+    },
+    {
+      "name": "PhantomJS."
+    }
+  ]
 }

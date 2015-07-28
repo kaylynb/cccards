@@ -1,4 +1,4 @@
-# cccards [![forthebadge](http://forthebadge.com/images/badges/certified-steve-bruhle.svg)](http://forthebadge.com)
+# cccards [![forthebadge](http://forthebadge.com/images/badges/fuck-it-ship-it.svg)](http://forthebadge.com)
 
 ## What
 This generates 'Cards Against Humanity' style cards. Standard poker card sized at ~900DPI.
