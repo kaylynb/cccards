@@ -6,12 +6,13 @@ var async = require('async')
 
 var width = 2466
 var height = 3366
+var concurrency = 6
 
 var cardTpl = dot.template(fs.readFileSync('card.dotjs.html', { encoding: 'utf8' }))
 
 var cardsJson = JSON.parse(fs.readFileSync('cards.json', { encoding: 'utf8' }))
 
-function generateCards (cards, black) {
+function generateCards (cards, black, cb) {
 	var cardType = black ? 'black' : 'white'
 	var cardPath = path.join('cards/', cardType)
 	var webshotOpts = {
@@ -19,11 +20,6 @@ function generateCards (cards, black) {
 		screenSize: {
 			width: width,
 			height: height
-		}
-	}
-	var errFn = function (err) {
-		if (err) {
-			throw err
 		}
 	}
 
@@ -35,10 +31,16 @@ function generateCards (cards, black) {
 	}),
 		path.join(cardPath, cardType + '_back.png'),
 		webshotOpts,
-		errFn
+		function (err) {
+			if (err) {
+				throw err
+			}
+		}
 	)
 
-	function generateCard(card, i) {
+	function generateCard(cardData, cb2) {
+		var card = cardData.card
+		var i = cardData.i
 		var pick = 0
 		var name = card.name || card
 
@@ -60,15 +62,35 @@ function generateCards (cards, black) {
 		}),
 			path.join(cardPath, cardType + i + '.png'),
 			webshotOpts,
-			errFn
+			cb2
 		)
 	}
 
-	cards.forEach(generateCard)
+	// This code is extra nightmarish. I needed to rate-limit
+	// the code and just added callbacks everywhere.
+	var q = async.queue(generateCard, concurrency)
+	q.drain = cb
+
+	var cardArr = []
+	cards.forEach(function (card, i) {
+		cardArr.push({
+			card: card,
+			i: i + 1
+		})
+	})
+
+	q.push(cardArr, function (err) {
+		if (err) {
+			throw err
+		}
+	})
 }
 
 console.log('Generating White Cards')
-generateCards(cardsJson.white)
+generateCards(cardsJson.white, false, function () {
+	console.log('Generating Black Cards')
+	generateCards(cardsJson.black, true, function () {
+		console.log('Done with cards!')
+	})
+})
 
-console.log('Generating Black Cards')
-generateCards(cardsJson.black, true)

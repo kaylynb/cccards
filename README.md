@@ -6,13 +6,13 @@ This generates 'Cards Against Humanity' style cards. Standard poker card sized a
 This is being used to generate a custom printed deck of [DevOps Against Humanity](https://github.com/bridgetkromhout/devops-against-humanity), so the card data is that, and not CAH.
 
 ### Examples
+![Card Back](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black_back.png)
 ![Black Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black3.png)
 ![White Card](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white1.png)
-![Card Back](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/black_back.png)
-![White Card w/ Desc](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white5.png)
+![White Card w/ Desc](https://raw.githubusercontent.com/kaylynb/cccards/master/cards_example/white10.png)
 
 ## How
-You need `phantomjs` installed. This renders each card as a page in phantom, and saves it as a png.
+You need `phantomjs` installed (or maybe not; I think `webshot` will install this?). This renders each card as a page in phantom, and saves it as a png.
 
 `cards.json` contains card data. `title` is the title; `abbreviation` is a shortened title for when PICK/DRAW is drawn on black cards. The rest of the data is just arrays for black/white cards. Optionally, instead of a string, you may pass an object with `name` & `desc`. `desc` is text that is drawn underneath the main text in a smaller & less bold font, as seen in examples.
 
