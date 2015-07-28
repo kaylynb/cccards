@@ -2,6 +2,7 @@ var webshot = require('webshot')
 var fs = require('fs')
 var dot = require('dot')
 var path = require('path')
+var async = require('async')
 
 var width = 2466
 var height = 3366
@@ -11,7 +12,6 @@ var cardTpl = dot.template(fs.readFileSync('card.dotjs.html', { encoding: 'utf8'
 var cardsJson = JSON.parse(fs.readFileSync('cards.json', { encoding: 'utf8' }))
 
 function generateCards (cards, black) {
-	var i = 0
 	var cardType = black ? 'black' : 'white'
 	var cardPath = path.join('cards/', cardType)
 	var webshotOpts = {
@@ -38,10 +38,9 @@ function generateCards (cards, black) {
 		errFn
 	)
 
-	cards.forEach(function (card) {
+	function generateCard(card, i) {
 		var pick = 0
 		var name = card.name || card
-		++i
 
 		console.log('[' + i + '/' + cards.length + '] ' + name)
 
@@ -63,7 +62,9 @@ function generateCards (cards, black) {
 			webshotOpts,
 			errFn
 		)
-	})
+	}
+
+	cards.forEach(generateCard)
 }
 
 console.log('Generating White Cards')

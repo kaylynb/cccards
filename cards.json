@@ -27,6 +27,10 @@
 		{
 			"name": "Richard Stallman's Neckbeard.",
 			"desc": "Created Emacs."
+		},
+		{
+			"name": "fortune | cowsay -f vader",
+			"desc": "<pre> ____________________________ \n/ A few hours grace before   \\\n\\ the madness begins again.  /\n ---------------------------- \n        \\    ,-^-.\n         \\   !oYo!\n          \\ /./=\\.\\______\n               ##        )\\/\\\n                ||-----w||\n                ||      ||\n\n               Cowth Vader\n</pre>"
 		}
 	]
 }
