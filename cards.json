@@ -1,18 +1,8 @@
 {
-  "title": "DevOps<br />Against<br />Humanity",
-  "abbreviation": "DAH",
+  "title": "DevOps Against Humanity",
   "black": [
     {
-      "name": "Enterprise _ in the cloud."
-    },
-    {
       "name": "Enterprise-ready _."
-    },
-    {
-      "name": "Hi, I'm Troy McClure. You may remember me from such commit messages as _ and _."
-    },
-    {
-      "name": "If _ is the answer, you are asking the wrong question."
     },
     {
       "name": "Running Windows in production leads to _."
@@ -28,9 +18,6 @@
     },
     {
       "name": "Google says we should _."
-    },
-    {
-      "name": "Etsy says we should _ everything."
     },
     {
       "name": "Main benefits of automation: _ and _."
@@ -60,7 +47,7 @@
       "name": "When I told Jez Humble about our _, he actually cried."
     },
     {
-      "name": "When I write a book about my experiences, it'll be called \"_, the good parts\""
+      "name": "When I write a book about my experiences, it'll be called <i>_, the good parts</i>"
     },
     {
       "name": "Restoring from backups failed due to _."
@@ -129,10 +116,10 @@
       "name": "My editor of choice is _."
     },
     {
-      "name": "_-Stack Developer."
+      "name": "_____________-Stack Developer."
     },
     {
-      "name": "_-SQL."
+      "name": "_____________-SQL."
     },
     {
       "name": "We run _ in a cron job every 15 minutes."
@@ -213,7 +200,7 @@
       "name": "We turned off _ and everything magically got better."
     },
     {
-      "name": "Read-eval-_-loop."
+      "name": "Read-eval-_____-loop."
     },
     {
       "name": "_ Considered Harmful."
@@ -261,7 +248,7 @@
       "name": "It compiles _ to JavaScript."
     },
     {
-      "name": "Given _.<br />When _.<br />Then _."
+      "name": "Given _____. <br />When _____. <br />Then _____."
     },
     {
       "name": "With _, you write once, run nowhere."
@@ -342,7 +329,7 @@
       "name": "Since the 1950s, engineers have been striving toward a more effective means of generating _."
     },
     {
-      "name": "#!/bin/sh<br />_<br />exit 0"
+      "name": "#!/bin/sh _ exit 0"
     }
   ],
   "white": [
@@ -668,7 +655,7 @@
       "name": "Office Space."
     },
     {
-      "name": "Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers!"
+      "name": "Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers! Developers!"
     },
     {
       "name": "Significant whitespace."
@@ -689,7 +676,7 @@
       "name": "Merge conflicts."
     },
     {
-      "name": "HipChat."
+      "name": "Slack."
     },
     {
       "name": "An IRC bot written entirely in sed."
@@ -797,7 +784,7 @@
       "name": "CFLAGS."
     },
     {
-      "name": "fortune | cowsay \\<br />-f vader",
+      "name": "fortune | cowsay <br />\\ -f vader",
       "desc": "<pre> ___________________________\n/ A few hours grace before  \\\n\\ the madness begins again  /\n ---------------------------\n        \\    ,-^-.\n         \\   !oYo!\n          \\ /./=\\.\\______\n               ##        )\\/\\\n                ||-----w||\n                ||      ||\n\n               Cowth Vader</pre>"
     },
     {
@@ -944,7 +931,7 @@
     },
     {
       "name": "Patrick Debois.",
-      "desc": "#devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops"
+      "desc": "#devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops #devops"
     },
     {
       "name": "git merge --force"

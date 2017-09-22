@@ -1,0 +1,127 @@
+#!/usr/bin/env node
+
+'use strict'
+
+const os = require('os')
+const R = require('ramda')
+
+const cccards = require('../lib/cccards')
+const getCardsFromFile = require('../lib/get-cards-from-file')
+
+const yargs = require('yargs')
+	.alias('version', 'v')
+	.command(
+		'* <cards> <output>',
+		'Generate cards.',
+		builder => builder
+			.config()
+			.positional('cards', {
+				alias: 'c',
+				required: true,
+				describe: 'Path to cards definition json.'
+			})
+			.positional('output', {
+				alias: 'o',
+				required: true,
+				describe: 'Path to write generated cards.'
+			})
+			.option('async', {
+				alias: 'a',
+				type: 'number',
+				description: 'Number of async renderers.',
+				default: os.cpus().length || 1
+			})
+			.option('title', {
+				alias: 't',
+				type: 'string',
+				description: 'Title of deck. Printed on back of cards and on bottom of face.'
+			})
+			.option('generate-back', {
+				alias: 'b',
+				type: 'bool',
+				default: true,
+				description: 'Generate back of cards. Disable this if included in card json.'
+			})
+			.option('html', {
+				alias: 'h',
+				type: 'bool',
+				default: false,
+				description: 'Output HTML files.'
+			})
+			.option('png', {
+				alias: 'p',
+				type: 'bool',
+				default: true,
+				description: 'Output PNG files.'
+			})
+			.option('inches', {
+				nargs: 2,
+				default: [2.5, 3.5],
+				description: 'PNG Only: Size of card in inches [x, y].'
+			})
+			.option('dpi', {
+				alias: 'd',
+				default: 300,
+				type: 'number',
+				description: 'PNG Only: DPI of output cards.'
+			})
+			.option('pixels', {
+				nargs: 2,
+				description: 'PNG Only: Size of card in pixels [x, y]. Overrides inches and dpi calculations.'
+			})
+			.option('font-family', {
+				alias: 'f',
+				default: "'Helvetica Neue', Helvetica, 'Liberation Sans', sans-serif",
+				type: 'string',
+				description: 'Font family to use for card text.'
+			})
+			.check(argv => {
+				const isPositiveInteger = num => Number.isInteger(num) && num > 0
+
+				if (!isPositiveInteger(argv.async)) {
+					throw Error('async must be positive integer.')
+				}
+
+				if (!isPositiveInteger(argv.dpi)) {
+					throw Error('dpi must be positive integer.')
+				}
+
+				const arrayCheck = (name, check, array) => {
+					if (array) {
+						if (!R.all(check)(array)) {
+							throw Error(`${name} must be pair of positive integers.`)
+						}
+					}
+				}
+
+				arrayCheck('inches', num => num > 0, argv.inches)
+				arrayCheck('pixels', isPositiveInteger, argv.pixels)
+
+				return true
+			})
+	)
+	.parse()
+
+;(async () => {
+	if (!yargs.pixels) {
+		yargs.pixels = yargs.inches.slice(0, 2).map(x => x * yargs.dpi)
+	}
+
+	if (yargs.png) {
+		console.log(`Output image dimensions: \nWidth: ${yargs.pixels[0]}px\nHeight: ${yargs.pixels[1]}px`)
+	}
+
+	await cccards({
+		cards: await getCardsFromFile(yargs.cards, yargs.title),
+		output: yargs.output,
+		async: yargs.async,
+		generateBack: yargs.generateBack,
+		png: yargs.png,
+		html: yargs.html,
+		width: yargs.pixels[0],
+		height: yargs.pixels[1],
+		fontFamily: yargs.fontFamily,
+		cli: true
+	})
+})()
+	.catch(e => console.error(e))

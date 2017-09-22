@@ -1,0 +1,7 @@
+{
+	"extends": "kaylynb-node",
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"sourceType": "script"
+	}
+}

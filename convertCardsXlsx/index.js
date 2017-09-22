@@ -1,10 +1,11 @@
-var xlsx = require('xlsx')
-var fs = require('fs')
+'use strict'
 
-var workbook = xlsx.readFile('cards.xlsx')
-var out = {
+const xlsx = require('xlsx')
+const fs = require('fs')
+
+const workbook = xlsx.readFile('cards.xlsx')
+const out = {
 	title: 'DevOps<br />Against<br />Humanity',
-	abbreviation: 'DAH',
 	black: xlsx.utils.sheet_to_row_object_array(workbook.Sheets['Black Cards']),
 	white: xlsx.utils.sheet_to_row_object_array(workbook.Sheets['White Cards'])
 }
