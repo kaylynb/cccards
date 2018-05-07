@@ -9,6 +9,7 @@ const cccards = require('../lib/cccards')
 const getCardsFromFile = require('../lib/get-cards-from-file')
 
 const yargs = require('yargs')
+	.strict()
 	.alias('version', 'v')
 	.command(
 		'* <cards> <output>',
