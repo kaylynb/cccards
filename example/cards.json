@@ -10,9 +10,7 @@
 			"processUnderlines": false
 		},
 		{
-			"name": "Given&nbsp;_. When&nbsp;_. Then&nbsp;_.",
-			"pick": 3,
-			"draw": 2
+			"name": "Given&nbsp;_. When&nbsp;_. Then&nbsp;_."
 		}
 	],
 	"white": [
