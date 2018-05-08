@@ -1,4 +1,4 @@
-# [Unreleased]
+# [1.1.0] - 2018-05-08
 - Fix border of logo not drawing on white cards
 
 # [1.0.0] - 2018-05-07
