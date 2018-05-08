@@ -6,11 +6,13 @@
 		},
 		{
 			"name": "<div class=\"underline\">s/<span class=\"underline\">&nbsp;</span>/<span class=\"underline\">&nbsp;</span>/g/</div>",
-			"pick": "2",
+			"pick": 2,
 			"processUnderlines": false
 		},
 		{
-			"name": "Given&nbsp;_. When&nbsp;_. Then&nbsp;_."
+			"name": "Given&nbsp;_. When&nbsp;_. Then&nbsp;_.",
+			"pick": 3,
+			"draw": 2
 		}
 	],
 	"white": [
