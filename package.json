@@ -23,6 +23,12 @@
     "url": "https://github.com/kaylynb/cccards/issues"
   },
   "homepage": "https://github.com/kaylynb/cccards#readme",
+  "keywords": [
+    "cards",
+    "against",
+    "humanity",
+    "game"
+  ],
   "dependencies": {
     "async": "^2.6.0",
     "dot": "^1.1.2",

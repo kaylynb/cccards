@@ -37,6 +37,8 @@ Requires NodeJS 10+
 ## Fonts
 CAH is rendered using `Helvetica Neue`, which is a commercial font that cannot be distributed by this project. Cards should also render fine with other sans-serif fonts, but if you want to have authentic looking cards, you will need to obtain `Helvetica Neue` and have it accessible to Chrome.
 
+If you want to know what font is being picked for rendering, you can output html, open it in Chrome, and check in the debug tools which font is being used.
+
 ## Card Data
 
 ### Blanks
