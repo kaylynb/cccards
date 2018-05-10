@@ -1,3 +1,6 @@
+# [Unreleased]
+- Fix non-integer DPI dimensions calculation causing crash
+
 # [1.1.0] - 2018-05-08
 - Fix border of logo not drawing on white cards
 
