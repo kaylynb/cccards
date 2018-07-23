@@ -11,70 +11,71 @@ const getCardsFromFile = require('../lib/get-cards-from-file')
 const yargs = require('yargs')
 	.strict()
 	.alias('version', 'v')
-	.command(
-		'* <cards> <output>',
-		'Generate cards.',
-		builder => builder
+	.command('* <cards> <output>', 'Generate cards.', builder =>
+		builder
 			.config()
 			.positional('cards', {
 				alias: 'c',
 				required: true,
-				describe: 'Path to cards definition json.'
+				describe: 'Path to cards definition json.',
 			})
 			.positional('output', {
 				alias: 'o',
 				required: true,
-				describe: 'Path to write generated cards.'
+				describe: 'Path to write generated cards.',
 			})
 			.option('async', {
 				alias: 'a',
 				type: 'number',
 				description: 'Number of async renderers.',
-				default: os.cpus().length || 1
+				default: os.cpus().length || 1,
 			})
 			.option('title', {
 				alias: 't',
 				type: 'string',
-				description: 'Title of deck. Printed on back of cards and on bottom of face.'
+				description:
+					'Title of deck. Printed on back of cards and on bottom of face.',
 			})
 			.option('generate-back', {
 				alias: 'b',
 				type: 'bool',
 				default: true,
-				description: 'Generate back of cards. Disable this if included in card json.'
+				description:
+					'Generate back of cards. Disable this if included in card json.',
 			})
 			.option('html', {
 				alias: 'h',
 				type: 'bool',
 				default: false,
-				description: 'Output HTML files.'
+				description: 'Output HTML files.',
 			})
 			.option('png', {
 				alias: 'p',
 				type: 'bool',
 				default: true,
-				description: 'Output PNG files.'
+				description: 'Output PNG files.',
 			})
 			.option('inches', {
 				nargs: 2,
 				default: [2.5, 3.5],
-				description: 'PNG Only: Size of card in inches [x, y].'
+				description: 'PNG Only: Size of card in inches [x, y].',
 			})
 			.option('dpi', {
 				alias: 'd',
 				default: 300,
 				type: 'number',
-				description: 'PNG Only: DPI of output cards.'
+				description: 'PNG Only: DPI of output cards.',
 			})
 			.option('pixels', {
 				nargs: 2,
-				description: 'PNG Only: Size of card in pixels [x, y]. Overrides inches and dpi calculations.'
+				description:
+					'PNG Only: Size of card in pixels [x, y]. Overrides inches and dpi calculations.',
 			})
 			.option('font-family', {
 				alias: 'f',
 				default: "'Helvetica Neue', Helvetica, 'Liberation Sans', sans-serif",
 				type: 'string',
-				description: 'Font family to use for card text.'
+				description: 'Font family to use for card text.',
 			})
 			.check(argv => {
 				const isPositiveInteger = num => Number.isInteger(num) && num > 0
@@ -99,17 +100,20 @@ const yargs = require('yargs')
 				arrayCheck('pixels', isPositiveInteger, argv.pixels)
 
 				return true
-			})
+			}),
 	)
 	.parse()
-
 ;(async () => {
 	if (!yargs.pixels) {
 		yargs.pixels = yargs.inches.slice(0, 2).map(x => Math.round(x * yargs.dpi))
 	}
 
 	if (yargs.png) {
-		console.log(`Output image dimensions: \nWidth: ${yargs.pixels[0]}px\nHeight: ${yargs.pixels[1]}px`)
+		console.log(
+			`Output image dimensions: \nWidth: ${yargs.pixels[0]}px\nHeight: ${
+				yargs.pixels[1]
+			}px`,
+		)
 	}
 
 	await cccards({
@@ -122,7 +126,6 @@ const yargs = require('yargs')
 		width: yargs.pixels[0],
 		height: yargs.pixels[1],
 		fontFamily: yargs.fontFamily,
-		cli: true
+		cli: true,
 	})
-})()
-	.catch(e => console.error(e))
+})().catch(e => console.error(e))

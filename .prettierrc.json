@@ -1,0 +1,12 @@
+{
+	"semi": false,
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "all",
+	"overrides": [
+		{
+			"files": "bin/cccards",
+			"options": { "parser": "flow" }
+		}
+	]
+}
