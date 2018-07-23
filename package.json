@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "eslint": "^5.2.0",
-    "eslint-config-kaylynb-node": "^5.0.0",
+    "eslint-config-kaylynb-node": "^6.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "prettier": "1.13.7"
