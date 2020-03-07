@@ -1,3 +1,6 @@
+# [Unreleased]
+- Update dependencies
+
 # [1.2.0] - 2019-02-22
 - Fix non-integer DPI dimensions calculation causing crash
 
